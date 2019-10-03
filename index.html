@@ -3,8 +3,9 @@
     
     
     <h3>A1</h3> 
+    <p>
 Create a function to get the grade from a quiz object 
-    
+    </p>
     <pre>
  var getGrade = function(quiz)
  {
@@ -18,9 +19,11 @@ var answer=getGrade;
 We did A1 together as a class. As a transformative function, we can give input a quiz and the function will give us back the quiz grade.
    
     </p>
-    
+    <hr>
     <h3>A2</h3>
+    <p>
     Find the mean of the quiz grades for the first penguin.   
+    </p>
     <pre>
     
     var answer=d3.mean(classroom [0].quizes, getGrade);    
@@ -31,9 +34,11 @@ We did A1 together as a class. As a transformative function, we can give input a
       For A2, we built on our getGrade function. We added the d3.mean and classroom[0] because we wanted to find the mean quiz grade for the first penguin.
       
     </p>
-    
+    <hr>
     <h3>A3</h3>
+    <p>
     Create a function to find the mean of the quiz grades for a given penguin.  
+    </p>
     <pre>
     var getMean = function(penguin)
 {
@@ -45,9 +50,11 @@ var answer= getMean(classroom [0])
 Once we realized we needed to include a new function and return this problem wasn't too challenging. We knew the input would be the penguin of intrest and the return code would need to include the d3.mean and our previous getGrade function. From there, it was just a matter of getting the syntax right.    
       
     </p>
-    
+    <hr>
     <h3>A4</h3>
+    <p>
     Find the mean quiz score of each penguins.  Use one line of "code"   
+    </p>
     <pre>
     var getEach = classroom.map(getMean);
 var answer= getEach;    
@@ -57,12 +64,23 @@ var answer= getEach;
       
       We decided to use the map feature after making the decison to use classroom because classroom is an array of all the data but we wanted an array of only the quiz scores. From there, we went back to our last getMean function and used it in our new code. 
     </p>
-    
+    <hr>
     <h3>A5</h3>
+    <p>
+    Find the mean of all the quiz score of the class.    
+    </p>
+    
      <pre>
-     
-     
+     var getAll = d3.mean(getEach)
+    
+var answer= getAll     
      </pre>
+    
+    <p>
+      For A5, we
+      
+    </p>
+    
     
   </body>
     
