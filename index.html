@@ -28,9 +28,41 @@ We did A1 together as a class. As a transformative function, we can give input a
     </pre>
     
     <p>
-      For A2, we built on our getGrade function. We added 
+      For A2, we built on our getGrade function. We added the d3.mean and classroom[0] because we wanted to find the mean quiz grade for the first penguin.
       
     </p>
+    
+    <h3>A3</h3>
+    Create a function to find the mean of the quiz grades for a given penguin.  
+    <pre>
+    var getMean = function(penguin)
+{
+    return d3.mean(penguin.quizes, getGrade);
+}
+var answer= getMean(classroom [0])    
+    </pre>
+    <p>
+Once we realized we needed to include a new function and return this problem wasn't too challenging. We knew the input would be the penguin of intrest and the return code would need to include the d3.mean and our previous getGrade function. From there, it was just a matter of getting the syntax right.    
+      
+    </p>
+    
+    <h3>A4</h3>
+    Find the mean quiz score of each penguins.  Use one line of "code"   
+    <pre>
+    var getEach = classroom.map(getMean);
+var answer= getEach;    
+    </pre>
+    <p>
+   This problem took us a long time to figure out. Initially we tried to create a new function until we remembered we were only allowed one line of code. Next we tried to us forEach but abandoned it because we decided to use "classroom" instead.
+      
+      We decided to use the map feature after making the decison to use classroom because classroom is an array of all the data but we wanted an array of only the quiz scores. From there, we went back to our last getMean function and used it in our new code. 
+    </p>
+    
+    <h3>A5</h3>
+     <pre>
+     
+     
+     </pre>
     
   </body>
     
